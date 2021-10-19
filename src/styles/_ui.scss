@@ -1,0 +1,53 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+@mixin shadow {
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+
+@mixin fade($time:1s) {
+    transition: $time ease;
+}
+
+.button {
+    padding: 5px;
+    border-radius: 5px;
+    @include shadow;
+    @include flex-center;
+    
+    &:hover{
+        transform: scale(1.1);
+        border-radius: 100px;
+        @include fade;
+    }
+}
+
+.input-text {
+    padding: 0px 20px;
+    margin-top: 0px;
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    height: 45px;
+    border-radius: 100px;
+    border: 0px;
+    background-color: rgba(255,255,255,0.8);
+    @include shadow;
+
+    &:hover, &:focus {
+        background-color: white;
+        border: 2px solid black;
+        @include fade(2s);
+    }
+    
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
