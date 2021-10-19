@@ -1,6 +1,6 @@
 # Weather App ⛅️ ☁️ 
 
-![Alt text](/public/app.jpg?raw=true "Aplicativo")
+![Alt text](https://github.com/DevKaiqueSilva/weather-app/blob/master/public/app.png "Aplicativo")
 
 <p>Aplicativo Web desenvolvido em React, realizando requisições na Weather API ( https://www.weatherapi.com/ ).</p>
 <p>Busca pelo clima da cidade informada nos próximos 3 dias.</p>
